@@ -1,0 +1,452 @@
+
+
+/* common styles */
+
+.clearfix,
+.clearfix::before,
+.clearfix::after{
+	content: "";
+	display: block;
+	clear: both;
+}
+.button{
+	padding:1rem;
+	background:#1abc9c;
+	box-shadow: 0 0 0 6px rgba(26, 188, 156, 0.6);
+	min-width:1rem;
+	min-height: 1rem;
+	display: table;
+}
+/* header */
+.header{
+	position: relative;
+	height:500px;
+}
+.bgHeader{
+	width:100%;
+	height:500px;
+	position: absolute;
+}
+.bgHeader::after{
+	content:"";
+	width:100%;
+	height:500px;
+	position: absolute;
+	background: rgba(224, 183, 181, 0.7);
+	
+	top: 0;
+	left: 0;
+}
+.bgHeader img{
+	height:500px;
+	min-width:100%;
+}
+.headerH1{
+	display: table;
+	text-align: center;
+	font:4.5rem/4.5rem 'Rokkitt', Times ,Arial, serif;
+	color:#fff;
+	padding:0 4rem 1.3rem;
+	border-bottom: 1px solid #fff;
+	margin:100px auto 0;
+}
+.headerH2{
+	display: table;
+	margin:auto;
+	text-align: center;
+	font:2.2rem/2.2rem 'Quicksand', Times ,Arial, sans-serif;
+	color:#fff;
+	padding:2.2rem 0 0 0;
+}
+.go{
+	z-index:3;
+	position:absolute;
+	left:50%;
+	bottom:0;
+	transform: translate(-50%, +50%) scale(1, 1);
+	font:normal 1.6rem/2.4rem 'Rokkitt', Times ,Arial, serif;
+	color:#fff;
+	text-decoration: none;
+	padding:1rem 2.5rem;
+	transition:all 0.3s ease-out;
+}
+.go:hover{
+	color:#297465;
+	transform:translate(-50%, +50%) scale(1.2, 1.2);
+	
+}
+
+
+/* navbar start */
+.navbar-default{
+	margin-top:45px;
+	background:none;
+	border:none;
+}
+.navbar-default .logo{
+	font: 1.6rem/2.1rem 'MyriadProCondRegular', Times ,Arial, sans-serif;
+	color:#fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition:all 0.3s ease-out;
+}
+.navbar-default .navbar-nav > li{
+	margin:1.5rem 0;
+}
+.navbar-default .navbar-nav > li:first-child{
+	margin-top: 5rem;
+}
+.navbar-default .navbar-nav > li > a{
+	font: 1.3rem/1.9rem 'MyriadProCondRegular', Times ,Arial, sans-serif;
+	color:#fff;
+	text-transform: uppercase;
+	text-decoration: none;
+	transition:all 0.3s ease-out;
+}
+.navbar-default .navbar-nav > .active > a, 
+.navbar-default .navbar-nav > .active > a:focus{
+	background:none;
+	color:#fff;
+	text-decoration: underline;
+	transition:all 0.3s ease-out;
+}
+.navbar-default .logo:hover, 
+.navbar-default .logo:focus,
+.navbar-default .navbar-nav > .active > a:hover,
+.navbar-default .navbar-nav > li > a:hover{
+	background:none;
+	color:#1abc9c;
+}
+.navbar-default .navbar-toggle:hover, 
+.navbar-default .navbar-toggle:focus{
+	background: #1abc9c;
+}
+.navbar-default .navbar-collapse{
+	text-align: center;
+}
+
+
+/* main */
+
+/* mainSection start*/
+
+
+.raphael{
+	font: 3.6rem/4rem 'MyriadProBold', Times ,Arial, sans-serif;
+	color:#1abc9c;
+	text-align: center;
+	margin:15rem 0 5rem;
+	text-transform: uppercase;
+}
+.entry{
+	font: 1.8rem/2.9rem 'MyriadProRegular',Times ,Arial, sans-serif;
+	color:#95a5a6;
+	text-align: center;
+	margin-bottom: 7rem;
+
+}
+article .icon{
+	display: block;
+	margin:0 auto 3rem;
+}
+article h3{
+	font: 2rem/2rem 'MyriadProBold', Times ,Arial, sans-serif;
+	color:#1abc9c;
+	text-align: center;
+	margin-bottom: 3rem;
+}
+article p{
+	font: 1.5rem/2.9rem 'MyriadProRegular',Times ,Arial, sans-serif;
+	color:#95a5a6;
+	text-align: justify;
+	margin-bottom: 7rem;
+}
+hr{
+	width:calc(100% - 30px);
+	color:#e4e8e8;
+	margin-bottom: 7.5rem;
+}
+
+
+
+/* portolio start*/
+
+
+.gallery{
+	position: relative;
+	margin-bottom: 5.5rem;
+}
+.wrapImg img{
+	width:100%;
+}
+.caption{
+ 	width: calc(100% - 30px);
+ 	position: absolute;
+ 	left: 15px;
+ 	bottom: 0;
+ 	background: #1abc9c;
+ 	padding: 1rem 1.5rem;
+	box-shadow: 0 -6px 0 0 rgba(26, 188, 156, 0.6);
+ 	transition:bottom 0.3s ease-out;
+ } 
+.caption h3{
+ 	font: 2rem/2.5rem 'Rokkitt', Times ,Arial, serif;
+	color:#fff;
+	text-align: left;	
+}
+.caption p{
+ 	font: 1.2rem/1.8rem 'MyriadProRegular',Times ,Arial, sans-serif;
+	color:#297465;
+	text-align: left;	
+}
+.search{
+	position:absolute;
+	top:20px;
+	right:35px;
+	width:3.8rem;
+	height: 3.8rem;
+	color:#fff;
+	font-size: 1.6rem;
+	transition: all 0.3s ease-out;
+}
+.search:hover{
+	color:#297465;
+}
+.viewMore{
+	margin: 2rem auto 7.5rem;
+	padding: 1.6rem 2.5rem;
+	font: 1.6rem/2.4rem 'Rokkitt', Times ,Arial, serif;
+	color:#fff;
+	text-decoration: none;
+	box-shadow: none;
+	transition:all 0.3s ease-out;
+
+}
+.viewMore span{
+	padding-left: 0.5rem;
+
+}
+.viewMore:hover{
+	color:#297465;
+	transform:scale(1.2, 1.2);
+}
+
+
+/* getInTouch start */
+
+
+.getInTouch{
+	position: relative;
+}
+
+.getInTouch h1{
+	font: 5.6rem/5.9rem 'Rokkitt', Times ,Arial, serif;
+	margin:6rem 0 6rem;
+	text-align: center;
+	color: #1abc9c;
+}
+
+.contactWithUs{
+	margin-bottom: 7.5rem;
+	padding: 0;
+}
+.contactWithUs input,
+.contactWithUs textarea{
+	font: 2rem/2.2rem 'Rokkitt', Times ,Arial, serif;
+	color:#95a5a6;
+	background: rgba(149, 165, 166, 0.26);
+	border: none;
+	padding: 2rem 3rem;
+
+}
+.contactWithUs input{
+	margin-bottom: 30px;
+	width: 100%;
+}
+.contactWithUs textarea{
+	max-width: 100%;
+	min-width: 100%;
+	min-height: 20rem;
+	padding: 2rem 3rem;
+}
+.submit{
+	border: none;
+	text-transform: uppercase;
+	margin-top: 30px;
+}
+.social{
+	display: block;
+	position: absolute;
+	top:calc(100% - 25px);
+	padding: 0;
+	margin-bottom: 5rem;
+}
+.social li{
+	width: 66px;
+	height: 66px;
+	background: url(../img/social.png) no-repeat 0 50%, #f6f6f6;
+	box-shadow: 0 0 0 6px rgba(26, 188, 156, 0.6);
+	margin:auto;
+}
+.social li:hover{
+	transform:scale(1.2, 1.2);
+}
+.social li a{
+	width: 100%;
+	height: 100%;
+	display: block;
+}
+.social .t{
+	background-position: 11px 50% !important;
+	margin: 0;
+}
+.social .d{
+	background-position: -330px 50% !important;
+}
+.social .f{
+	background-position: -663px 50% !important;
+	margin: 0;
+	margin-left: calc(100% - 66px);
+}
+
+/* footer start */
+
+
+.footer{
+	background: #1abc9c;
+	padding-top: 14rem;
+}
+.footer h1{
+	margin-bottom: 7.5rem;
+	font: 2.1rem/2.4rem 'Rokkitt', Times ,Arial, serif;
+	color:#fff;
+
+}
+.footer h1 span{
+	float: right;
+}
+
+
+
+/* tablet and desktop styles */
+
+
+@media (min-width: 768px){
+	/* header */
+	.navbar-default .navbar-nav > li{
+		margin:0;
+	}
+	.navbar-default .navbar-nav > li:first-child{
+		margin-top: 0;
+	}
+	
+	
+	/* portfolio */
+	
+	
+	.wrapImg{
+		overflow: hidden;
+		position: relative;
+	}
+	.wrapImg::before{
+		content:"";
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: rgba(224, 183, 181, 0.5);
+		z-index:5;
+		left:0;
+		transition: all 0.3s ease-out;
+	}
+	.caption{
+		padding: 1.5rem 2rem;
+		bottom:-100%;
+		width:100%;
+		left: 0;
+	}
+	.caption h3{
+	 	font-size: 3rem;
+	 	line-height:3.5rem;
+	}
+	.caption p{
+	 	font-size: 1.5rem;
+	 	line-height: 2.5rem;
+	}
+	.search{
+		right:-100%;
+	}
+	.wrapImg:hover .search{
+		right:20px;
+	}
+	.wrapImg:hover .caption{
+		bottom: 0;
+	}
+	.wrapImg:hover::before{
+		left:-100%;
+	}
+
+
+	/* getInTouch */
+
+	.contactWithUs input,
+	.contactWithUs textarea{
+		font-size: 3rem ;
+		line-height:3.2rem;
+	}
+	.social li{
+		width: 88px;
+		height: 88px;
+		transition: all 0.3s ease-out;
+	}
+	.social .t{
+		background-position: 20px 50% !important;
+		margin: 0;
+	}
+	.social .d{
+		background-position: -320px 50% !important;
+	}
+	.social .f{
+		background-position: -653px 50% !important;
+		margin: 0;
+		margin-left: calc(100% - 88px);
+	}
+}
+
+
+
+
+/* fonts */
+
+
+
+
+/* font-family: "MyriadProCondRegular"; */
+@font-face {
+    font-family: "MyriadProCondRegular";
+    src: url("../fonts/MyriadProCondRegular/MyriadProCondRegular.eot");
+    src: url("../fonts/MyriadProCondRegular/MyriadProCondRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProCondRegular/MyriadProCondRegular.woff") format("woff"),
+    url("../fonts/MyriadProCondRegular/MyriadProCondRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProBold"; */
+@font-face {
+    font-family: "MyriadProBold";
+    src: url("../fonts/MyriadProBold/MyriadProBold.eot");
+    src: url("../fonts/MyriadProBold/MyriadProBold.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProBold/MyriadProBold.woff") format("woff"),
+    url("../fonts/MyriadProBold/MyriadProBold.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+/* font-family: "MyriadProRegular"; */
+@font-face {
+    font-family: "MyriadProRegular";
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot");
+    src: url("../fonts/MyriadProRegular/MyriadProRegular.eot?#iefix")format("embedded-opentype"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.woff") format("woff"),
+    url("../fonts/MyriadProRegular/MyriadProRegular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
